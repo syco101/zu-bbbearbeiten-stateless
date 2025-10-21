@@ -1,0 +1,15 @@
+name: CI/CD Pipeline (Vorbereitung)
+
+on:
+  push:
+    branches: [ "main" ]  
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Build-Stub
+        run: echo " Pipeline wurde automatisch gestartet (Skelett)"
